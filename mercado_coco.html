@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
     .card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Sombra mais suave para um look mais clean */
       padding: 24px;
       margin-bottom: 24px;
       transition: background-color 0.3s, box-shadow 0.3s;
@@ -45,7 +45,6 @@
       flex-shrink: 0;
     }
 
-
     /* Dark mode styles */
     html.dark body {
       background: #1a202c; /* Dark background */
@@ -53,7 +52,7 @@
     }
     html.dark .card {
       background: #2d3748; /* Darker card background */
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Stronger shadow for contrast */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Stronger shadow for contrast in dark mode */
     }
     html.dark .section-title {
       border-bottom-color: #38a169; /* Darker green for contrast */
@@ -69,7 +68,6 @@
     html.dark input:focus {
       border-color: #63b3ed;
     }
-
 
     /* Estilos para o botão Voltar ao Topo */
     #backToTopBtn {
@@ -99,7 +97,6 @@
       background-color: #38a169;
     }
 
-
     /* Estilos para o efeito de fade-in (scroll reveal) */
     .fade-in-section {
       opacity: 0;
@@ -110,7 +107,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-
 
     /* Estilos para o Accordion */
     .accordion-item {
@@ -162,7 +158,6 @@
       transform: rotate(90deg);
     }
 
-
     /* Estilos para Tooltip */
     .tooltip-container {
       position: relative;
@@ -202,7 +197,6 @@
       opacity: 1;
     }
 
-
     /* Estilo para o mapa */
     #productionMap {
         height: 400px; /* Altura padrão para o mapa */
@@ -226,7 +220,6 @@
 </head>
 <body class="antialiased">
 
-
   <header class="bg-gradient-to-r from-emerald-500 to-green-600 text-white p-6 shadow-lg rounded-b-xl fixed w-full z-50 top-0">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl md:text-3xl font-bold">🥥 Água de Coco</h1>
@@ -237,6 +230,7 @@
           <li><a href="#mercado-b2b" class="hover:text-emerald-200 transition duration-300 ease-in-out smooth-scroll">B2B</a></li>
           <li><a href="#comparativo-produtos" class="hover:text-emerald-200 transition duration-300 ease-in-out smooth-scroll">Produtos</a></li>
           <li><a href="#calculo-rentabilidade" class="hover:text-emerald-200 transition duration-300 ease-in-out smooth-scroll">Rentabilidade</a></li>
+          <li><a href="#o-que-buscamos" class="hover:text-emerald-200 transition duration-300 ease-in-out smooth-scroll">O que Buscamos</a></li>
           <li>
             <button id="themeToggle" class="p-2 rounded-full bg-emerald-700 hover:bg-emerald-800 transition duration-300 ease-in-out">
               🌙
@@ -247,9 +241,7 @@
     </div>
   </header>
 
-
   <main class="container mx-auto p-4 md:p-8 pt-24"> <!-- Adiciona padding-top para compensar o header fixo -->
-
 
     <!-- Visão Geral do Mercado Global -->
     <section id="panorama-global" class="mb-10 fade-in-section">
@@ -300,7 +292,6 @@
       </div>
     </section>
 
-
     <!-- Mercado Brasileiro -->
     <section id="brasil-foco" class="mb-10 fade-in-section">
       <h2 class="text-3xl font-bold section-title">🇧🇷 Brasil em Foco</h2>
@@ -322,9 +313,13 @@
               <p class="mt-2">O consumo per capita de água de coco no Brasil foi de 0,8 litros/habitante/ano em 2020. A nova lei federal (Lei 14.795/24) visa incentivar a produção sustentável e as exportações, o que pode impulsionar ainda mais o setor.</p>
             </div>
             <div class="md:col-span-2">
-                <h3 class="font-semibold text-emerald-700 mb-3">Exportações Brasileiras de Água de Coco</h3>
-                <p>No primeiro semestre de 2024, o Brasil exportou <strong>675 toneladas de água de coco</strong>, gerando aproximadamente <strong>US$ 672 mil</strong> em receita, um aumento de <strong>95%</strong> em comparação com o mesmo período de 2023.</p>
-                <p class="mt-2">Os principais destinos das exportações brasileiras são EUA, Espanha e Argentina, indicando um reconhecimento crescente da qualidade do produto nacional no mercado internacional. O aumento da demanda global por alimentos e bebidas saudáveis impulsiona essas exportações, com a água de coco concentrada e asséptica ganhando espaço no B2B.</p>
+                <h3 class="font-semibold text-emerald-700 mb-3">Escoamento da Produção de Água de Coco no Brasil</h3>
+                <p>A produção brasileira de água de coco (industrializada) tem um escoamento majoritariamente voltado para o mercado interno, com uma parcela crescente destinada à exportação.</p>
+                <ul class="list-none p-0 mt-2">
+                    <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Mercado Interno:</strong> A maior parte da água de coco industrializada produzida no Brasil é consumida internamente. Em 2020, o volume de produção nacional foi de <strong>170.433 mil litros</strong>. O consumo per capita é de 0,8 litros/habitante/ano (2020). A água de coco é uma bebida enraizada na cultura brasileira, com um aumento notável na penetração de mercado em lares brasileiros.</span></li>
+                    <li class="list-item"><span class="list-item-icon">✈️</span> <span class="list-item-text"><strong>Exportação:</strong> Embora o volume total exportado seja menor que o consumo interno, a exportação de água de coco (incluindo concentrada e asséptica, formatos B2B) tem crescido significativamente. No primeiro semestre de 2024, o Brasil exportou <strong>675 toneladas</strong>, gerando <strong>US$ 672 mil</strong>, um aumento de 95% em valor e volume comparado ao ano anterior. Os principais destinos são EUA, Espanha e Argentina. Isso indica um reconhecimento crescente da qualidade do produto brasileiro no exterior.</span></li>
+                </ul>
+                <p class="mt-2">A proporção exata de volume que permanece no Brasil versus o que é exportado pode variar anualmente, mas a tendência é de que o mercado interno absorva a maior parte da produção de água de coco pronta para beber, enquanto a exportação se concentra em formatos B2B de maior valor agregado e conveniência logística, como a água concentrada e asséptica.</p>
             </div>
             <div class="md:col-span-2">
                 <h3 class="font-semibold text-emerald-700 mb-3">Tempo de Produção do Coqueiro</h3>
@@ -339,7 +334,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Produção Mundial -->
     <section id="producao-mundial" class="mb-10 fade-in-section">
@@ -378,6 +372,60 @@
       </div>
     </section>
 
+    <!-- Principais Players -->
+    <section id="principais-players" class="mb-10 fade-in-section">
+        <h2 class="text-3xl font-bold section-title">🏆 Principais Players</h2>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Visão Geral dos Principais Players</span>
+            <span class="accordion-icon">▶</span>
+          </div>
+          <div class="accordion-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-3">Players Globais de Água de Coco</h3>
+                    <ul class="list-none p-0">
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Vita Coco:</strong> Líder de mercado, com forte dependência (96% da receita) da água de coco. Foca em hidratação natural e tem expandido sua presença globalmente.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>ZICO (Coca-Cola):</strong> Uma das marcas mais conhecidas globalmente, parte do portfólio da Coca-Cola, focada em hidratação e bem-estar.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>O.N.E. Coconut Water (PepsiCo):</strong> Outra grande marca impulsionada pela vasta rede de distribuição da PepsiCo.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Harmless Harvest:</strong> Destaca-s.e por seu foco em produtos orgânicos e sustentáveis, com uma participação majoritária adquirida pela Danone Manifesto Ventures.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>C2O Pure Coconut Water:</strong> Conhecida pela pureza e origem tailandesa.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Taste Nirvana:</strong> Outra marca tailandesa com foco em qualidade e sabor autêntico.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Amy & Brian Naturals:</strong> Oferece água de coco sem OGM e com foco em ingredientes naturais.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>IFBH Ltd. (IF Coconut Water):</strong> Líder no mercado chinês e de Hong Kong, com crescimento expressivo.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Goya Foods:</strong> Forte presença em mercados latinos e nos EUA.</span></li>
+                        <li class="list-item"><span class="list-item-icon">⭐</span> <span class="list-item-text"><strong>Coco Libre:</strong> Água de coco orgânica de origem sustentável.</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-3">Players Nacionais (Brasil) de Água de Coco</h3>
+                    <ul class="list-none p-0">
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Ducoco Alimentos S.A.:</strong> Um dos maiores players no Brasil, com forte reconhecimento de marca e ampla distribuição. Enfrentou processo de recuperação judicial em 2025 (dívidas de R$ 670 mi), buscando reestruturação.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Obrigado (Grupo Aurantiaca):</strong> Marca premium com foco em sustentabilidade e integração vertical (plantações próprias na Bahia). Também em recuperação judicial desde 2020.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Sococo:</strong> Tradicional empresa brasileira com forte atuação no mercado de produtos de coco, incluindo água de coco.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Kero Coco (PepsiCo Brasil):</strong> Líder de mercado no Brasil e parte do grupo PepsiCo, com vasta capilaridade de distribuição.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Do Bem (Ambev):</strong> Marca adquirida pela Ambev, conhecida por seus produtos naturais e diferenciados, com foco em bebidas saudáveis.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Amacoco:</strong> Destaca-se no mercado de água de coco orgânica no Brasil, com foco em sourcing local e sustentabilidade.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Coco do Vale:</strong> Relevante player nacional, contribuindo para a oferta de água de coco embalada.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Natural Brasil:</strong> Empresa conhecida por seus produtos naturais e orgânicos, incluindo água de coco integral.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Coco Fresco:</strong> Outro player focado no mercado nacional.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Dona Coco:</strong> Contribui para a diversidade de marcas no mercado brasileiro.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>St Marche:</strong> Rede de supermercados que também atua com marca própria de água de coco, refletindo a tendência do varejo.</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-emerald-700 mb-3">Principais Players de Outros Produtos de Coco</h3>
+                    <ul class="list-none p-0">
+                        <li class="list-item"><span class="list-item-icon">🥥</span> <span class="list-item-text"><strong>Óleo de Coco:</strong> Nutiva, Dr. Bronner's, La Tourangelle, Thrive Market, Coco Soul, Organic India.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🥛</span> <span class="list-item-text"><strong>Leite de Coco/Creme de Coco:</strong> Thai Kitchen, Aroy-D, Native Forest, So Delicious, Goya, Califia Farms, Chaokoh.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🌴</span> <span class="list-item-text"><strong>Coco Desidratado:</strong> Primex Coco Products, VIET DELTA, Silvermill Group, V V Industries, Kapar Coconut Industries.</span></li>
+                        <li class="list-item"><span class="list-item-icon">🧶</span> <span class="list-item-text"><strong>Fibra de Coco (Coir):</strong> Rolanka International, Coco Hitech (Vietnã), Fibredust LLC, Pelemix Ltd, Universal Coco Indonesia.</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- Mercado B2B de Água de Coco e Qualidade -->
     <section id="mercado-b2b" class="mb-10 fade-in-section">
@@ -420,15 +468,6 @@
                 </ul>
             </div>
             <div class="card md:col-span-2">
-                <h3 class="text-xl font-semibold text-emerald-700 mb-3">Principais Players no Mercado B2B e B2C por Região</h3>
-                <p>A dominância de mercado varia entre B2B e B2C, e por região:</p>
-                <ul class="list-none p-0 mt-2">
-                    <li class="list-item"><span class="list-item-icon">🇺🇸</span> <span class="list-item-text"><strong>Mercado Americano (EUA):</strong> No B2C, <strong>Vita Coco</strong> e <strong>ZICO (Coca-Cola)</strong> historicamente dominaram, mas marcas como Harmless Harvest (orgânica) e C2O têm forte presença. No B2B, players globais de ingredientes e grandes processadores de coco como **Thai Coconut Public Company Limited**, **Celebes Coconut Corporation** (Filipinas) e **Franklin Baker** (EUA/Filipinas) fornecem para fabricantes de bebidas e alimentos.</span></li>
-                    <li class="list-item"><span class="list-item-icon">🇪🇺</span> <span class="list-item-text"><strong>Mercado Europeu:</strong> Marcas como <strong>Vita Coco</strong>, <strong>Coco Fuzion 100</strong> e outras marcas próprias de varejistas têm crescido no B2C. No B2B, importadores e distribuidores especializados como **Greenbridge**, **Cocofina** (Reino Unido) e **Nature's Charm** (Tailândia) fornecem ingredientes para a indústria europeia. A demanda por produtos orgânicos e com alegações de saúde é particularmente forte na Europa.</span></li>
-                    <li class="list-item"><span class="list-item-icon">🇧🇷</span> <span class="list-item-text"><strong>Mercado Brasileiro:</strong> No B2C, <strong>Ducoco</strong> e <strong>Sococo</strong> são líderes. No B2B, empresas como a **Paraipaba Agroindustrial** (que veremos em Case Study) e outras processadoras de grande volume fornecem a água de coco asséptica para indústrias de bebidas e alimentos.</span></li>
-                </ul>
-            </div>
-            <div class="card md:col-span-2">
                 <h3 class="text-xl font-semibold text-emerald-700 mb-3">Exportações Brasileiras de Água de Coco Concentrada (B2B)</h3>
                 <p class="mb-2">O Brasil tem se consolidado como um importante exportador de água de coco, especialmente em formatos B2B. No primeiro semestre de 2024, o Brasil exportou <strong>675 toneladas de água de coco</strong> (incluindo concentrada e asséptica), gerando aproximadamente <strong>US$ 672 mil</strong> em receita, um aumento de 95% em relação ao ano anterior. Embora o volume específico de *apenas* água de coco concentrada não seja publicamente detalhado, ela representa uma parte significativa dessas exportações B2B.</p>
                 <ul class="list-none p-0 mt-2">
@@ -444,7 +483,6 @@
             </div>
           </div>
 
-
           <h3 class="text-xl font-semibold text-emerald-700 mb-3 mt-6">Case Study: Paraipaba Agroindustrial (Brasil)</h3>
           <div class="card">
             <p class="text-lg mb-2">A **Paraipaba Agroindustrial**, localizada no Ceará, Brasil, é um exemplo notável de player na indústria intermediária de água de coco. Fundada em 1993, a empresa se destaca como uma das maiores produtoras de água de coco natural e asséptica do Brasil e do mundo.</p>
@@ -457,20 +495,19 @@
             <p class="mt-2">O case da Paraipaba Agroindustrial ilustra o potencial e a relevância de ser um fornecedor B2B de água de coco pré-processada, atuando como elo crucial entre o agronegócio de coco e a indústria de bens de consumo final.</p>
           </div>
 
-
           <h3 class="text-xl font-semibold text-emerald-700 mb-3 mt-6">Oscilações de Preços no Segmento B2B</h3>
           <div class="card">
             <p class="text-lg mb-2">Os preços da água de coco no segmento B2B (matéria-prima pré-processada) são influenciados por diversos fatores e podem apresentar oscilações ao longo do ano e em períodos mais longos. Diferentemente do mercado B2C, onde os preços são mais estáveis devido a estratégias de varejo, o B2B é mais sensível à dinâmica de oferta e demanda da matéria-prima e aos custos operacionais.</p>
             <ul class="list-none p-0 mt-2">
-                <li class="list-item"><span class="list-item-icon">🌧️</span> <span class="list-item-text"><strong>Sazonalidade da Produção de Coco:</strong> A oferta de coco fresco varia ao longo do ano, com picos e vales de safra. Isso impacta diretamente a disponibilidade e o preço da matéria-prima para processamento. Regiões com duas safras anuais podem ter oscilações menos drásticas.</span></li>
-                <li class="list-item"><span class="list-item-icon">🦠</span> <span class="list-item-text"><strong>Eventos Climáticos e Doenças:</strong> Secas prolongadas, inundações ou surtos de doenças (ex: *lethal yellowing*) em grandes regiões produtoras podem causar escassez e aumentos abruptos nos preços da água de coco B2B.</span></li>
+                <li class="list-item"><span class="list-item-icon">🌧️</span> <span class="list-item-text"><strong>Sazonalidade e Condições Climáticas:</strong> Períodos de seca ou chuvas intensas afetam a produção de coco, impactando diretamente a oferta e, consequentemente, os preços da matéria-prima.</span></li>
+                <li class="list-item"><span class="list-item-icon">🦠</span> <span class="list-item-text"><strong>Doenças e Pragas:</strong> Surtos de doenças em coqueiros podem reduzir drasticamente a oferta, elevando os preços da matéria-prima (B2B).</span></li>
                 <li class="list-item"><span class="list-item-icon">⛽</span> <span class="list-item-text"><strong>Custos de Insumos e Logística:</strong> Variações nos preços de fertilizantes, energia, embalagens (tambores, bags-in-box) e, principalmente, frete internacional (marítimo) impactam diretamente o custo de produção e exportação, sendo repassados aos preços B2B.</span></li>
-                <li class="list-item"><span class="list-item-icon">💲</span> <span class="list-item-text"><strong>Taxas de Câmbio:</strong> Para exportadores e importadores, flutuações nas taxas de câmbio (ex: Real vs. Dólar) podem tornar o produto mais caro ou mais barato em moeda local, influenciando as decisões de compra e venda.</span></li>
+                <li class="list-item"><span class="list-item-icon">💲</span> <span class="list-item-text"><strong>Câmbio:</strong> Para produtos importados ou exportados, flutuações nas taxas de câmbio (ex: Real vs. Dólar) podem tornar o produto mais caro ou mais barato em moeda local, influenciando as decisões de compra e venda.</span></li>
                 <li class="list-item"><span class="list-item-icon">📈</span> <span class="list-item-text"><strong>Demanda Global:</strong> O crescimento da demanda por produtos naturais e funcionais em mercados-chave (EUA, Europa) aumenta a pressão sobre a oferta de água de coco B2B, podendo elevar os preços.</span></li>
             </ul>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-400"><strong>Preços B2B (Visão Geral e Tendências - Sujeito a Variações):</strong></p>
             <ul class="list-none p-0 mt-2">
-                <li class="list-item"><span class="list-item-icon">📉</span> <span class="list-item-text"><strong>Água de Coco Asséptica/Concentrada (preços por tonelada):</strong> Historicamente, os preços B2B podem variar de **US$ 1.500 a US$ 3.000 por tonelada** para água asséptica, dependendo de fatores como origem, teor de BRIX, certificações (orgânica, Fair Trade) e volume do contrato. Para concentrados, o preço por tonelada é significativamente maior devido ao menor volume e maior BRIX.</span></li>
+                <li class="list-item"><span class="list-item-icon">📉</span> <span class="list-item-text"><strong>Água de Coco Asséptica/Concentrada (preços por tonelada):</strong> Historicamente, os preços B2B podem variar de **US$ 1.500 - US$ 3.000 por tonelada** para água asséptica, dependendo da origem, brix, e certificações (orgânica, Fair Trade) e volume do contrato. Para concentrados, o preço por tonelada é significativamente maior devido ao menor volume e maior BRIX.</span></li>
                 <li class="list-item"><span class="list-item-icon">🗓️</span> <span class="list-item-text"><strong>Oscilações Mensais/Anuais:</strong> As oscilações mensais podem ser de **5% a 15%** dependendo da safra e da demanda spot. Em períodos de escassez ou alta demanda, esses picos podem ser mais acentuados. Ao longo dos últimos 3 anos, o mercado tem visto uma tendência geral de aumento de preços impulsionada pela demanda crescente e custos logísticos, mas com flutuações pontuais.</span></li>
                 <li class="list-item"><span class="list-item-icon">📊</span> <span class="list-item-text"><strong>Mercado Externo vs. Interno:</strong> Os preços no mercado externo (exportação) geralmente são mais altos para água de coco asséptica/concentrada devido aos custos de certificação, logística internacional e demanda por produtos premium. No mercado interno brasileiro B2B, os preços podem ser ligeiramente mais baixos, mas ainda sensíveis à safra e aos custos de processamento e transporte doméstico.</span></li>
             </ul>
@@ -480,6 +517,153 @@
       </div>
     </section>
 
+    <!-- Principais Fornecedores e Compradores B2B -->
+    <section id="principais-fornecedores-compradores" class="mb-10 fade-in-section">
+      <h2 class="text-3xl font-bold section-title">🤝 Principais Fornecedores e Compradores B2B</h2>
+      <div class="accordion-item">
+        <div class="accordion-header active">
+          <span>Detalhamento de Players e Estratégias de Abordagem</span>
+          <span class="accordion-icon">▶</span>
+        </div>
+        <div class="accordion-content open">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card md:col-span-2">
+              <h3 class="text-xl font-semibold text-emerald-700 mb-3">Principais Fornecedores de Água de Coco Industrializada (B2B)</h3>
+              <p class="mb-2">Estes são os principais players que atuam como fornecedores de água de coco pré-processada para a indústria global:</p>
+              <ul class="list-none p-0 mt-2">
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Paraipaba Agroindustrial (Brasil):</strong> Conforme detalhado no Case Study, um dos maiores produtores de água de coco natural e asséptica do Brasil, com alcance global e fornecedor de grandes marcas internacionais.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Thai Coconut Public Company Limited (Tailândia):</strong> Um dos maiores processadores de coco da Tailândia, fornecendo uma vasta gama de produtos de coco, incluindo água de coco para o mercado B2B global.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Celebes Coconut Corporation (Filipinas):</strong> Importante player filipino, com forte capacidade de processamento e exportação de produtos de coco.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Franklin Baker (EUA/Filipinas):</strong> Um dos maiores fornecedores de ingredientes de coco do mundo, com operações nas Filipinas e distribuição global, atendendo a diversas indústrias.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>PT. Pulau Sambu (Indonésia):</strong> Grande produtor e processador de coco na Indonésia, com uma vasta gama de produtos, incluindo água de coco.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>VIET DELTA (Vietnã):</strong> Fornecedor vietnamita com foco em produtos orgânicos e certificações internacionais, atuando no mercado B2B de água de coco.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Silvermill Group (Sri Lanka):</strong> Um dos maiores exportadores de produtos de coco do Sri Lanka, com foco em qualidade e sustentabilidade.</span></li>
+                <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Ducoco Alimentos S.A. (Brasil):</strong> Além de sua marca B2C, também atua como fornecedor B2B de água de coco pré-processada no mercado interno e para exportação.</span></li>
+              </ul>
+            </div>
+
+            <div class="card md:col-span-2">
+                <h3 class="text-xl font-semibold text-emerald-700 mb-3">Principais Compradores de Água de Coco Industrializada (B2B)</h3>
+                <p class="mb-2">Estes são os tipos de empresas e organizações que mais demandam água de coco pré-processada como ingrediente ou produto a granel:</p>
+                <ul class="list-none p-0 mt-2">
+                    <li class="list-item"><span class="list-item-icon">🍹</span> <span class="list-item-text"><strong>Grandes Fabricantes de Bebidas:</strong> Empresas como PepsiCo, Coca-Cola, Danone (via Harmless Harvest), e outras que produzem sucos, bebidas energéticas, chás gelados, smoothies e refrigerantes à base de coco. Exemplos incluem:
+                        <ul class="list-none ml-6 mt-1">
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Vita Coco:</strong> Embora seja uma marca B2C, atua como um grande comprador de água de coco a granel de fornecedores como a Paraipaba.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Innocent Drinks (Coca-Cola):</strong> Focada em bebidas naturais e sustentáveis na Europa.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Naked Juice (PepsiCo):</strong> Marca de sucos e smoothies nos EUA.</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><span class="list-item-icon">🍦</span> <span class="list-item-text"><strong>Fabricantes de Alimentos e Laticínios Alternativos:</strong> Empresas que utilizam água de coco em iogurtes veganos, sorvetes, sobremesas, barras de cereais e produtos de panificação.</span></li>
+                    <li class="list-item"><span class="list-item-icon">💊</span> <span class="list-item-text"><strong>Indústria de Nutrição Esportiva e Suplementos:</strong> Empresas que formulam bebidas de recuperação, pós-treino e suplementos com base em eletrólitos naturais da água de coco.</span></li>
+                    <li class="list-item"><span class="list-item-icon">🧴</span> <span class="list-item-text"><strong>Indústria Cosmética e de Cuidados Pessoais:</strong> Fabricantes de produtos de beleza e higiene que utilizam água de coco por suas propriedades hidratantes.</span></li>
+                    <li class="list-item"><span class="list-item-icon">🛒</span> <span class="list-item-text"><strong>Grandes Redes de Varejo (para Private Label):</strong> Supermercados e hipermercados que desenvolvem suas próprias linhas de água de coco (natural, saborizada, orgânica) sob marca própria. Exemplos incluem Whole Foods Market (EUA) e Natural Grocers (EUA).</span></li>
+                    <li class="list-item"><span class="list-item-icon">📦</span> <span class="list-item-text"><strong>Importadores e Distribuidores de Ingredientes:</strong> Empresas especializadas na aquisição e distribuição de ingredientes a granel para a indústria, como Kiril Mischeff (Europa), Döhler UK, First Grade International, Jufa, KeHE Distributors (América do Norte), ICI Foods (EUA) e Ingredient Exchange (EUA). Eles atuam como intermediários cruciais.</span></li>
+                </ul>
+            </div>
+
+            <div class="card md:col-span-2">
+                <h3 class="text-xl font-semibold text-emerald-700 mb-3">Como Entrar em Contato e Qual a Abordagem Ideal para Vender Água de Coco Industrializada (B2B)</h3>
+                <p class="mb-2">A venda B2B de água de coco industrializada exige uma abordagem estratégica e multicanal:</p>
+                <ul class="list-none p-0 mt-2">
+                    <li class="list-item"><span class="list-item-icon">📧</span> <span class="list-item-text"><strong>Canais de Contato Direto:</strong>
+                        <ul class="list-none ml-6 mt-1">
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Portais de Fornecedores Dedicados:</strong> Grandes corporações (PepsiCo STARS, Coca-Cola Supplier Portal, Whole Foods Market Supplier Portal) possuem plataformas online para registro e submissão de informações. Priorize-os.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Formulários de Contato em Sites Corporativos:</strong> Busque seções como "Contato", "Parcerias", "Seja um Fornecedor" nos sites das empresas-alvo.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>E-mails/Telefones Corporativos:</strong> Para empresas menores ou quando portais não são claros, e-mails de contato geral (ex: info@, sales@) ou telefones de sedes podem ser um ponto de partida.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>LinkedIn:</strong> Identifique gerentes de aquisição, P&D, ou sourcing e faça uma abordagem profissional e concisa.</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><span class="list-item-icon">🤝</span> <span class="list-item-text"><strong>Abordagem Ideal (Proposta de Valor B2B):</strong>
+                        <ul class="list-none ml-6 mt-1">
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Foco em Soluções, não Apenas Produto:</strong> Entenda as necessidades do cliente (ex: busca por um BRIX específico, necessidade de certificação orgânica, desafio de shelf-life) e posicione sua água de coco como a solução.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Destaque Certificações:</strong> Enfatize todas as certificações relevantes (FSSC 22000, Orgânica, Fair Trade, Kosher, Halal) como prova de qualidade, segurança e conformidade.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Consistência e Confiabilidade:</strong> Destaque sua capacidade de fornecimento em volume, consistência de qualidade (parâmetros físico-químicos e sensoriais) e cumprimento de prazos.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Sustentabilidade e Rastreabilidade:</strong> Apresente suas credenciais ESG, práticas agrícolas sustentáveis e a capacidade de rastrear o produto da fazenda à fábrica. Isso é um diferencial crescente.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Amostras e Especificações Técnicas:</strong> Esteja pronto para fornecer amostras, fichas técnicas detalhadas (com BRIX, pH, acidez, etc.) e informações sobre o processo de produção.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Parceria e Co-desenvolvimento:</strong> Ofereça-se para trabalhar com a equipe de P&D do cliente para desenvolver novas formulações ou adaptar a água de coco às suas necessidades específicas.</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><span class="list-item-icon">🌐</span> <span class="list-item-text"><strong>Plataformas e Eventos B2B:</strong>
+                        <ul class="list-none ml-6 mt-1">
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Feiras Comerciais:</strong> Participar de eventos como Fi Europe (Europa), IFT FIRST (EUA) ou BioBrazil & NaturalTech (Brasil) para networking direto.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Mercados B2B Online:</strong> Listar produtos em plataformas como go4WorldBusiness.com, EuroPlux.com, PlantBasedVendors.com para alcançar compradores ativos.</span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text"><strong>Associações Industriais:</strong> Aderir a associações como Juice Products Association (JPA) ou FoodDrinkEurope para networking e acesso a diretórios de membros.</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparativo de Produtos Derivados do Coco -->
+    <section id="comparativo-produtos" class="mb-10 fade-in-section">
+      <h2 class="text-3xl font-bold section-title">📊 Comparativo de Produtos Derivados do Coco</h2>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Análise Detalhada dos Mercados de Produtos de Coco</span>
+          <span class="accordion-icon">▶</span>
+        </div>
+        <div class="accordion-content">
+          <div class="card">
+            <p class="text-lg mb-4">O mercado global de produtos de coco é diversificado, com a água de coco, óleo de coco, leite de coco, coco desidratado e fibra de coco sendo os principais segmentos. Cada um possui suas próprias dinâmicas de mercado, tamanho e projeções de crescimento.</p>
+
+            <div class="overflow-x-auto">
+              <table class="min-w-full bg-white dark:bg-gray-800 rounded-lg shadow-md">
+                <thead>
+                  <tr class="bg-emerald-100 dark:bg-gray-700 text-emerald-800 dark:text-gray-200 uppercase text-sm leading-normal">
+                    <th class="py-3 px-6 text-left">Produto</th>
+                    <th class="py-3 px-6 text-left">Tamanho do Mercado (2024)</th>
+                    <th class="py-3 px-6 text-left">Projeção (CAGR)</th>
+                    <th class="py-3 px-6 text-left">Principais Usos/Aplicações</th>
+                    <th class="py-3 px-6 text-left">Observações</th>
+                  </tr>
+                </thead>
+                <tbody class="text-gray-700 dark:text-gray-300 text-sm font-light">
+                  <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <td class="py-3 px-6 text-left whitespace-nowrap">Água de Coco</td>
+                    <td class="py-3 px-6 text-left">US$ 6,52 bilhões</td>
+                    <td class="py-3 px-6 text-left">19,7% (até 2033)</td>
+                    <td class="py-3 px-6 text-left">Bebida hidratante, natural e funcional.</td>
+                    <td class="py-3 px-6 text-left">Segmento de crescimento mais rápido entre os produtos de coco. Forte demanda por opções orgânicas e com "rótulo limpo".</td>
+                  </tr>
+                  <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <td class="py-3 px-6 text-left whitespace-nowrap">Óleo de Coco</td>
+                    <td class="py-3 px-6 text-left">US$ 5,98 bilhões (2022)</td>
+                    <td class="py-3 px-6 text-left">7,31% (até 2030)</td>
+                    <td class="py-3 px-6 text-left">Culinária (culinária, panificação), cosméticos, cuidados pessoais, suplementos.</td>
+                    <td class="py-3 px-6 text-left">Maior fatia do mercado de produtos de coco em 2024 (56%). Crescimento impulsionado por aplicações em cosmecêuticos e produtos de higiene pessoal.</td>
+                  </tr>
+                  <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <td class="py-3 px-6 text-left whitespace-nowrap">Leite/Creme de Coco</td>
+                    <td class="py-3 px-6 text-left">US$ 3,5 bilhões</td>
+                    <td class="py-3 px-6 text-left">11,7% (até 2034)</td>
+                    <td class="py-3 px-6 text-left">Bebidas vegetais, culinária (pratos asiáticos, sobremesas), produtos lácteos alternativos.</td>
+                    <td class="py-3 px-6 text-left">Crescimento impulsionado pela demanda por produtos *dairy-free* e à base de plantas, e aumento da conscientização sobre intolerância à lactose.</td>
+                  </tr>
+                  <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <td class="py-3 px-6 text-left whitespace-nowrap">Coco Desidratado</td>
+                    <td class="py-3 px-6 text-left">US$ 9,8 bilhões</td>
+                    <td class="py-3 px-6 text-left">2,4% (até 2030)</td>
+                    <td class="py-3 px-6 text-left">Indústria de panificação, confeitaria, lanches, cereais matinais.</td>
+                    <td class="py-3 px-6 text-left">Demanda crescente por ingredientes naturais e não processados. Latin America foi o maior mercado em 2023.</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <td class="py-3 px-6 text-left whitespace-nowrap">Fibra de Coco (Coir)</td>
+                    <td class="py-3 px-6 text-left">US$ 2,06 bilhões (2023 - meio de cultura)</td>
+                    <td class="py-3 px-6 text-left">6,45% (até 2033 - meio de cultura)</td>
+                    <td class="py-3 px-6 text-left">Substrato de cultivo (horticultura, hidroponia), geotêxteis, estofamentos, cordas, artesanato.</td>
+                    <td class="py-3 px-6 text-left">Crescimento impulsionado pela demanda por meios de cultivo sustentáveis e produtos ecologicamente corretos.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-4"><em>Dados de mercado podem variar ligeiramente entre diferentes fontes e metodologias de pesquisa.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Cálculo de Rentabilidade Detalhado -->
     <section id="calculo-rentabilidade" class="mb-10 fade-in-section">
@@ -493,36 +677,32 @@
             <div class="card">
                 <p class="text-lg mb-4">Esta seção apresenta cálculos detalhados para estimar a produção necessária e o investimento em plantio para alcançar um lucro anual desejado. Utilize a calculadora interativa para simular diferentes cenários.</p>
 
-
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <!-- Seção de Premissas e Cálculos Base -->
                     <div>
                         <h3 class="text-xl font-semibold text-emerald-700 mb-3">Premissas e Cálculos Base:</h3>
                         <ul class="list-none p-0 mb-4">
-                            <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Custo de processamento e logística por coco (rendendo 600ml de água): <strong>US$ 0,80</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Custo de processamento e logística por coco (rendendo <span id="premiseWaterYield">400</span>ml de água): <strong>US$ 0,80</strong></span></li>
                             <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Preço de venda por embalagem Tetra Pak de 330ml: <strong>US$ 2,50</strong></span></li>
-                            <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Rendimento médio de água por coco: <strong>600 ml</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Rendimento médio de água por coco: <span id="premiseWaterYieldStatic">400</span> ml</span></li>
                             <li class="list-item"><span class="list-item-icon">✔️</span> <span class="list-item-text">Taxa de câmbio utilizada (aproximada): <strong>US$ 1,00 = R$ 5,20</strong></span></li>
                         </ul>
 
-
                         <h3 class="text-xl font-semibold text-emerald-700 mb-3">Margem de Lucro por ml:</h3>
                         <ul class="list-none p-0 mb-4">
-                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text">Custo por ml de água (da matéria-prima): US$ 0,80 / 600 ml = <strong>US$ 0,001333/ml</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text">Custo por ml de água (a partir do coco in natura): US$ 0,80 / <span id="premiseWaterYieldCalc1">400</span> ml = <strong>US$ 0,002000/ml</strong></span></li>
                             <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text">Preço de venda por ml de água (em Tetra Pak): US$ 2,50 / 330 ml = <strong>US$ 0,007576/ml</strong></span></li>
-                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text">Lucro por ml de água: US$ 0,007576 - US$ 0,001333 = <strong>US$ 0,006243/ml</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">➡️</span> <span class="list-item-text">Lucro por ml de água: US$ 0,007576 - US$ 0,002000 = <strong>US$ 0,005576/ml</strong></span></li>
                         </ul>
-
 
                         <h3 class="text-xl font-semibold text-emerald-700 mb-3">Volume de Produção para R$ 1 Milhão de Lucro:</h3>
                         <ul class="list-none p-0 mb-4">
                             <li class="list-item"><span class="list-item-icon">🎯</span> <span class="list-item-text">Lucro Anual Desejado em US$: R$ 1.000.000 / 5,20 = <strong>US$ 192.307,69</strong></span></li>
-                            <li class="list-item"><span class="list-item-icon">🥥</span> <span class="list-item-text">Volume total de água de coco necessário: US$ 192.307,69 / US$ 0,006243/ml = <strong>~30.803.940 ml (ou 30.804 litros)</strong></span></li>
-                            <li class="list-item"><span class="list-item-icon">📦</span> <span class="list-item-text">Número de embalagens Tetra Pak (330ml) a serem vendidas: 30.803.940 ml / 330 ml/embalagem = <strong>~93.345 embalagens</strong></span></li>
-                            <li class="list-item"><span class="list-item-icon">🌴</span> <span class="list-item-text">Número de cocos a serem processados: 30.803.940 ml / 600 ml/coco = <strong>~51.340 cocos</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">🥥</span> <span class="list-item-text">Volume total de água de coco necessário: US$ 192.307,69 / US$ 0,005576/ml = <strong>~34.487.410 ml (ou 34.487 litros)</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">📦</span> <span class="list-item-text">Número de embalagens Tetra Pak (330ml) a serem vendidas: 34.487.410 ml / 330 ml/embalagem = <strong>~104.507 embalagens</strong></span></li>
+                            <li class="list-item"><span class="list-item-icon">🌴</span> <span class="list-item-text">Número de cocos a serem processados: 34.487.410 ml / <span id="premiseWaterYieldCalc2">400</span> ml/coco = <strong>~86.219 cocos</strong></span></li>
                         </ul>
                     </div>
-
 
                     <!-- Calculadora de Lucratividade -->
                     <div>
@@ -543,6 +723,10 @@
                             <div class="mb-4">
                                 <label for="exchangeRate" class="block text-gray-700 text-sm font-bold mb-2">Taxa de Câmbio (R$/US$):</label>
                                 <input type="number" id="exchangeRate" value="5.20" step="0.01" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <label for="waterYieldPerCoconutMl" class="block text-gray-700 text-sm font-bold mb-2">Rendimento Médio de Água por Coco (ml):</label>
+                                <input type="number" id="waterYieldPerCoconutMl" value="400" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                             </div>
                             <div class="mb-4">
                                 <label for="fruitsPerTree" class="block text-gray-700 text-sm font-bold mb-2">Frutos por Coqueiro (por ano):</label>
@@ -566,7 +750,6 @@
                     </div>
                 </div>
 
-
                 <h3 class="text-xl font-semibold text-emerald-700 mb-3 mt-6">Cenário de Exemplo: Fazenda de 50 Hectares</h3>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                     <ul class="list-none p-0 mb-4">
@@ -579,7 +762,6 @@
                         <li class="list-item"><span class="list-item-icon">🥥</span> <span class="list-item-text"><strong>Produção Anual Estimada de Cocos:</strong> <span id="farmEstimatedCoconuts">624.000</span> cocos</span></li>
                         <li class="list-item"><span class="list-item-icon">📈</span> <span class="list-item-text">Para estimar o lucro e receita anuais dessa fazenda, utilize a calculadora abaixo:</span></li>
                     </ul>
-
 
                     <h4 class="text-lg font-semibold text-emerald-600 mb-3 mt-4">Calculadora de Receita e Lucro da Fazenda:</h4>
                     <div class="mb-4">
@@ -611,7 +793,6 @@
         </div>
     </section>
 
-
     <!-- SWOT focado no Mercado B2B de Água de Coco -->
     <section class="mb-10 fade-in-section">
       <h2 class="text-3xl font-bold section-title">🔍 SWOT: Mercado B2B de Água de Coco</h2>
@@ -622,7 +803,6 @@
         </div>
         <div class="accordion-content open">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
 
             <div class="card">
               <h3 class="font-semibold text-emerald-700 mb-3">Forças 💪 (Strengths)</h3>
@@ -635,7 +815,6 @@
               </ul>
             </div>
 
-
             <div class="card">
               <h3 class="font-semibold text-red-600 mb-3">Fraquezas 📉 (Weaknesses)</h3>
               <ul>
@@ -644,9 +823,9 @@
                 <li class="list-item"><span class="list-item-icon">❌</span> <strong>Padronização e Consistência:</strong> Manter a consistência de parâmetros físico-químicos e sensoriais em grandes volumes é um desafio para fornecedores B2B, pois a qualidade da matéria-prima pode variar por região e safra.</li>
                 <li class="list-item"><span class="list-item-icon">❌</span> <strong>Concorrência de Fornecedores Asiáticos:</strong> Países como Tailândia, Filipinas e Indonésia possuem grandes volumes de produção e, por vezes, custos de mão de obra mais baixos, criando forte concorrência para fornecedores de outras regiões no mercado B2B global.</li>
                 <li class="list-item"><span class="list-item-icon">❌</span> <strong>Poder de Barganha de Grandes Clientes:</strong> Fornecedores B2B podem enfrentar pressão sobre os preços e termos contratuais de grandes fabricantes de bebidas e alimentos, que compram em volumes massivos.</li>
+                <li class="list-item"><span class="list-item-icon">❌</span> <strong>Vulnerabilidades Financeiras:</strong> Casos de recuperação judicial de grandes players nacionais (Ducoco, Obrigado) indicam vulnerabilidades financeiras sistêmicas no setor, como endividamento e dependência de mecanismos de financiamento específicos, que podem afetar a percepção de risco para novos entrantes.</li>
               </ul>
             </div>
-
 
             <div class="card">
               <h3 class="font-semibold text-blue-600 mb-3">Oportunidades ✨ (Opportunities)</h3>
@@ -655,10 +834,10 @@
                 <li class="list-item"><span class="list-item-icon">💡</span> <strong>Inovação em Produtos B2B:</strong> Desenvolvimento de novas soluções (ex: blends de água de coco com outros sucos, concentrados específicos para aplicações, ingredientes funcionais derivados do coco) para atender às necessidades de formulação dos clientes industriais.</li>
                 <li class="list-item"><span class="list-item-icon">💡</span> <strong>Parcerias Estratégicas e Verticalização:</strong> Colaborações com produtores de coco para garantir o suprimento de matéria-prima de qualidade, ou com fabricantes de produtos finais para coinovação e canais de distribuição.</li>
                 <li class="list-item"><span class="list-item-icon">💡</span> <strong>Crescimento do Segmento Orgânico e Sustentável:</strong> A demanda por certificações e práticas de sustentabilidade na cadeia de suprimentos B2B é uma oportunidade para diferenciar produtos e acessar mercados premium.</li>
-                <li class="list-item"><span class="list-item-icon">💡</span> <strong>Otimização Logística e Tecnológica:</strong> Investimentos em tecnologias de processamento e logística (ex: otimização de rotas, automação) podem reduzir custos e aumentar a eficiência, melhorando a margem e a competitividade.</li>
+                <li class="list-item"><span class="list-item-icon">💡</span> <span class="list-item-text"><strong>Otimização Logística e Tecnológica:</strong> Investimentos em tecnologias de processamento e logística (ex: otimização de rotas, automação) podem reduzir custos e aumentar a eficiência, melhorando a margem e a competitividade.</span></li>
+                <li class="list-item"><span class="list-item-icon">💡</span> <span class="list-item-text"><strong>Tarifas Americanas sobre Produtos Asiáticos (Era Trump):</strong> As tarifas impostas pelos EUA a produtos asiáticos (incluindo Vietnã e Filipinas, grandes produtores de coco) durante a administração Trump podem ter tornado os produtos asiáticos mais caros no mercado americano. Isso cria uma **vantagem competitiva para o Brasil**, que não foi alvo dessas tarifas ou recebeu taxação mínima (10% em alguns casos, mas não especificamente para água de coco). Essa situação pode desviar a demanda de compradores americanos para fornecedores brasileiros, que se tornam mais competitivos em preço e podem ganhar participação de mercado.</li>
               </ul>
             </div>
-
 
             <div class="card">
               <h3 class="font-semibold text-orange-600 mb-3">Ameaças ⚠️ (Threats)</h3>
@@ -666,8 +845,9 @@
                 <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Flutuações de Preços da Matéria-Prima:</strong> Variações nos preços do coco in natura devido a fatores climáticos, doenças ou especulação podem impactar diretamente a rentabilidade dos fornecedores B2B.</li>
                 <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Concorrência de Ingredientes Alternativos:</strong> O surgimento de novas bases vegetais ou ingredientes funcionais (ex: água de bétula, xaropes de agave) pode desviar a demanda da água de coco como matéria-prima.</li>
                 <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Barreiras Comerciais e Regulatórias:</strong> Novas tarifas, cotas de importação ou regulamentações de segurança alimentar em mercados-chave podem dificultar as exportações e aumentar os custos de conformidade para fornecedores B2B.</li>
-                <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Crises Geopolíticas e Interrupções na Cadeia de Suprimentos:</strong> Conflitos, desastres naturais ou problemas de transporte global podem afetar a disponibilidade de coco e a capacidade de entrega, gerando instabilidade no fornecimento B2B.</li>
+                <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Crises geopolíticas e Interrupções na Cadeia de Suprimentos:</strong> Conflitos, desastres naturais ou problemas de transporte global podem afetar a disponibilidade de coco e a capacidade de entrega, gerando instabilidade no fornecimento B2B.</li>
                 <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Mudanças na Percepção do Consumidor Final:</strong> Embora o B2B forneça a matéria-prima, uma mudança negativa na percepção pública da água de coco (ex: novas pesquisas sobre açúcar, alegações de saúde questionadas) pode reduzir a demanda dos clientes industriais.</li>
+                <li class="list-item"><span class="list-item-icon">🚨</span> <strong>Guerra Comercial e Protecionismo:</strong> Embora as tarifas de Trump possam ter sido uma oportunidade para o Brasil, a instabilidade gerada por guerras comerciais e políticas protecionistas globais representa uma ameaça contínua para o comércio internacional de commodities, podendo levar a novas tarifas ou barreiras inesperadas.</li>
               </ul>
             </div>
           </div>
@@ -675,24 +855,78 @@
       </div>
     </section>
 
+    <!-- O que buscamos -->
+    <section id="o-que-buscamos" class="mb-10 fade-in-section">
+      <h2 class="text-3xl font-bold section-title">🎯 O que Buscamos</h2>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Direcionamento para Estratégia de Entrada</span>
+          <span class="accordion-icon">▶</span>
+        </div>
+        <div class="accordion-content">
+          <div class="card">
+            <p class="text-lg mb-4">Para a elaboração de uma estratégia eficaz como novo entrante no mercado B2B de água de coco, buscamos informações e direcionamentos específicos:</p>
+            <ul class="list-none p-0 mt-2">
+              <li class="list-item"><span class="list-item-icon">🗺️</span> <span class="list-item-text"><strong>Regiões Produtoras de Alta Competitividade:</strong> Identificar as principais regiões globais de produção de água de coco que se destacam pela alta produtividade (kg/hectare) e preços competitivos por quilo. Isso nos dará um parâmetro de benchmark para nossa própria competitividade.</span></li>
+              <li class="list-item"><span class="list-item-icon">🏭</span> <span class="list-item-text"><strong>Maiores Processadores Globais (Top 80% do Volume):</strong> Quais são os principais processadores de água de coco no mundo e onde estão localizados? Buscamos os players que, em conjunto, respondem por aproximadamente 80% do volume global processado anualmente.</span></li>
+              <li class="list-item"><span class="list-item-icon">💲</span> <span class="list-item-text"><strong>Preços de Mercado de Água de Coco:</strong> Quais são os preços de referência para a água de coco in natura e para o concentrado de água de coco 60 Brix no mercado internacional?</span></li>
+              <li class="list-item"><span class="list-item-icon">📈</span> <span class="list-item-text"><strong>Segmentação de Mercado B2B para Água de Coco:</strong> Quais são as melhores segmentações para um estudo de mercado focado na água de coco no segmento B2B (Business-to-Business)?</span></li>
+              <li class="list-item"><span class="list-item-icon">🤝</span> <span class="list-item-text"><strong>Estratégias de Abordagem para Prospects (CIN/FIEC):</strong> Com base nos processadores identificados, qual a melhor abordagem para iniciar contato e relacionamento com esses prospects, utilizando a rede e credibilidade da CIN/FIEC?</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-
   <button id="backToTopBtn" title="Voltar ao Topo">⬆️</button>
-
 
   <footer class="bg-gray-800 text-white p-6 text-center rounded-t-xl">
     <p>&copy; 2025 Análise de Mercado de Água de Coco. Todos os direitos reservados.</p>
     <p class="text-sm mt-2">Dados de fontes como Mordor Intelligence, Global Growth Insights, FAO e IBGE.</p>
+    <div class="mt-4 text-xs text-gray-400">
+        <h4 class="font-semibold mb-2">Fontes e Referências:</h4>
+        <ul class="list-none p-0 space-y-1 text-left mx-auto max-w-2xl">
+            <li><a href="https://www.globalgrowthinsights.com/pt/market-reports/coconut-water-market-115536" target="_blank" class="text-emerald-300 hover:underline">Global Growth Insights - Crescimento e previsão do mercado de água de coco 2033</a></li>
+            <li><a href="https://www.cbi.eu/sites/default/files/pdf/research/527.pdf" target="_blank" class="text-emerald-300 hover:underline">CBI - The European market potential for coconut water</a></li>
+            <li><a href="https://www.bnb.gov.br/s482-dspace/bitstream/123456789/1043/1/2021_CDS_206.pdf" target="_blank" class="text-emerald-300 hover:underline">Banco do Nordeste - COCO: PRODUÇÃO E MERCADO</a></li>
+            <li><a href="https://worldpopulationreview.com/country-rankings/coconut-production-by-country" target="_blank" class="text-emerald-300 hover:underline">World Population Review - Coconut Production by Country 2025</a></li>
+            <li><a href="https://www.band.com.br/agro/noticias/agro-band-nordeste-lidera-a-producao-de-agua-de-coco-202409200856" target="_blank" class="text-emerald-300 hover:underline">Agro Band - Nordeste lidera a produção de água de coco</a></li>
+            <li><a href="https://www.dnv.com/services/fssc-22000-food-safety-system-certification-scheme-5161/" target="_blank" class="text-emerald-300 hover:underline">DNV - FSSC 22000: Food Safety Certification</a></li>
+            <li><a href="https://www.fssc.com/fssc-22000/" target="_blank" class="text-emerald-300 hover:underline">FSSC - Providing trust and impact for global food safety with FSSC 22000</a></li>
+            <li><a href="https://source86.com/bulk-products/bulk-coconut-water-concentrate/" target="_blank" class="text-emerald-300 hover:underline">Ingredient Brothers - Bulk Coconut Water Concentrate</a></li>
+            <li><a href="https://www.bonafideanugerahsentosa.com/how-coconut-water-concentrate-is-made/" target="_blank" class="text-emerald-300 hover:underline">Bonafide Anugerah Sentosa - How Coconut Water Concentrate is Made</a></li>
+            <li><a href="https://www.mordorintelligence.com/pt/industry-reports/coconut-water-market" target="_blank" class="text-emerald-300 hover:underline">Mordor Intelligence - Tamanho do mercado de água de coco e análise de ações</a></li>
+            <li><a href="https://www.zionmarketresearch.com/report/coconut-oil-market" target="_blank" class="text-emerald-300 hover:underline">Zion Market Research - Coconut Oil Market Size, Share, Growth & Trends 2030</a></li>
+            <li><a href="https://www.gminsights.com/industry-analysis/coconut-milk-and-cream-market" target="_blank" class="text-emerald-300 hover:underline">Global Market Insights - Coconut Milk and Cream Market Size, Forecasts Report 2034</a></li>
+            <li><a href="https://www.grandviewresearch.com/industry-analysis/desiccated-coconut-market-report" target="_blank" class="text-emerald-300 hover:underline">Grand View Research - Desiccated Coconut Market Size, Share, Growth Report 2030</a></li>
+            <li><a href="https://www.sphericalinsights.com/reports/coconut-fiber-culture-medium-market" target="_blank" class="text-emerald-300 hover:underline">Spherical Insights - Global Coconut Fiber Culture Medium Market Size, Forecasts To 2033</a></li>
+            <li><a href="https://www.vitacoco.com/" target="_blank" class="text-emerald-300 hover:underline">Vita Coco Oficial</a></li>
+            <li><a href="https://www.zico.com/" target="_blank" class="text-emerald-300 hover:underline">ZICO Oficial</a></li>
+            <li><a href="https://harmlessharvest.com/" target="_blank" class="text-emerald-300 hover:underline">Harmless Harvest Oficial</a></li>
+            <li><a href="https://www.goyafoods.com/" target="_blank" class="text-emerald-300 hover:underline">Goya Foods Oficial</a></li>
+            <li><a href="https://ducoco.com.br/" target="_blank" class="text-emerald-300 hover:underline">Ducoco Oficial</a></li>
+            <li><a href="https://obrigado.com/" target="_blank" class="text-emerald-300 hover:underline">Obrigado Oficial</a></li>
+            <li><a href="https://www.tetrapak.com/pt-pt/solutions/categories/other-beverages/coconut-water" target="_blank" class="text-emerald-300 hover:underline">Tetra Pak - Fabricação e processamento de água de coco</a></li>
+            <li><a href="https://www.b2brazil.com.br/hotsite/intercontinent/agua-de-coco" target="_blank" class="text-emerald-300 hover:underline">B2Brazil - Intercontinent (Água de Coco)</a></li>
+            <li><a href="https://www.fas.usda.gov/topics/trade-shows/food-ingredients-fi-europe-1" target="_blank" class="text-emerald-300 hover:underline">USDA FAS - Food Ingredients (Fi) Europe</a></li>
+            <li><a href="https://www.figlobal.com/europe/en/useful-info/about.html" target="_blank" class="text-emerald-300 hover:underline">Fi Global - About Us</a></li>
+            <li><a href="https://www.smartcore-digital.com/en/home.html" target="_blank" class="text-emerald-300 hover:underline">Smartcore - B2B Food and Nutrition Digital Marketing</a></li>
+            <li><a href="https://protermars.europlux.com/" target="_blank" class="text-emerald-300 hover:underline">EuroPlux.com - The European B2B Marketplace</a></li>
+            <li><a href="https://naturebiofoods.eu/organic-ingredients/" target="_blank" class="text-emerald-300 hover:underline">Nature Bio Foods Europe - Organic Ingredients</a></li>
+            <li><a href="https://plantbasedvendors.com/purchasers/" target="_blank" class="text-emerald-300 hover:underline">PlantBasedVendors.com - Purchasers & Food Service Professionals</a></li>
+            <li><a href="https://www.go4worldbusiness.com/buyers/worldwide/wanted-:-coconut-water-concentrate-juice.html" target="_blank" class="text-emerald-300 hover:underline">go4WorldBusiness.com - Coconut Water Concentrate Juice Buyers & Importers</a></li>
+            <li><a href="https://www.sindcoco.com.br/pdf/informativos/15526606695c8bb8bd906e1.pdf" target="_blank" class="text-emerald-300 hover:underline">SINDCOCO - Boletim Conjuntural Importações/Exportações</a></li>
+            <li>Dados de arquivos fornecidos: "Recuperação Judicial Empresas de água de coco._.pdf", "Análise B2B Água de Coco_.pdf", "Compradores de água de coco_.pdf", "V_EXPORTACAO_GERAL_2020-01_2025-12_DT20250626.xlsx - Detalhamento.csv", "V_EXPORTACAO_GERAL_2020-01_2025-12_DT20250626.xlsx - Resultado.csv"</li>
+        </ul>
+    </div>
   </footer>
-
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Inclui Leaflet JS -->
   <script>
     // JavaScript para o botão Voltar ao Topo
     const backToTopBtn = document.getElementById("backToTopBtn");
-
 
     // Mostra o botão quando o usuário rola para baixo 200px
     window.onscroll = function() {
@@ -703,23 +937,19 @@
       }
     };
 
-
     // Rola para o topo da página quando o botão é clicado
     backToTopBtn.addEventListener("click", function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-
     // JavaScript para o efeito de fade-in das seções
     const fadeSections = document.querySelectorAll('.fade-in-section');
-
 
     const observerOptions = {
       root: null, // viewport
       rootMargin: '0px',
       threshold: 0.1 // 10% da seção visível para ativar
     };
-
 
     const sectionObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -730,18 +960,15 @@
       });
     }, observerOptions);
 
-
     fadeSections.forEach(section => {
       sectionObserver.observe(section);
     });
-
 
     // JavaScript para o Accordion
     document.querySelectorAll('.accordion-header').forEach(header => {
         header.addEventListener('click', () => {
             const accordionContent = header.nextElementSibling;
             const accordionItem = header.closest('.accordion-item');
-
 
             // Fecha outros accordions abertos no mesmo nível
             document.querySelectorAll('.accordion-content.open').forEach(content => {
@@ -751,13 +978,11 @@
                 }
             });
 
-
             // Alterna o accordion clicado
             accordionContent.classList.toggle('open');
             header.classList.toggle('active');
         });
     });
-
 
     // JavaScript para o Dark/Light Mode Toggle
     const themeToggleBtn = document.getElementById('themeToggle');
@@ -768,7 +993,6 @@
         localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     });
 
-
     // Verifica o tema preferido do usuário ao carregar a página
     if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -776,7 +1000,6 @@
     } else {
         themeToggleBtn.textContent = '🌙';
     }
-
 
     // JavaScript para Rolagem Suave (Smooth Scroll)
     document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
@@ -787,7 +1010,6 @@
             });
         });
     });
-
 
     // JavaScript para Gráficos Interativos (Chart.js)
     function createGlobalMarketChart() {
@@ -855,7 +1077,6 @@
         });
     }
 
-
     // JavaScript para Contadores Animados
     function animateCounter(id, target) {
         const element = document.getElementById(id);
@@ -864,13 +1085,11 @@
         const duration = 2000; // 2 segundos
         let startTime = null;
 
-
         function step(currentTime) {
             if (!startTime) startTime = currentTime;
             const progress = Math.min((currentTime - startTime) / duration, 1);
             const value = start + (target - start) * progress;
             element.textContent = value.toLocaleString('pt-BR', { maximumFractionDigits: 1 });
-
 
             if (progress < 1) {
                 requestAnimationFrame(step);
@@ -879,16 +1098,15 @@
         requestAnimationFrame(step);
     }
 
-
     // JavaScript para a Calculadora de Lucratividade Principal
     function calculateProfitability() {
         const targetProfitEl = document.getElementById('targetProfit');
         const sellingPriceEl = document.getElementById('sellingPrice');
         const processingCostEl = document.getElementById('processingCost');
         const exchangeRateEl = document.getElementById('exchangeRate');
+        const waterYieldPerCoconutMlEl = document.getElementById('waterYieldPerCoconutMl'); // Novo elemento
         const fruitsPerTreeEl = document.getElementById('fruitsPerTree');
         const treesPerHectareEl = document.getElementById('treesPerHectare');
-
 
         const requiredVolumeEl = document.getElementById('requiredVolume');
         const requiredTetraPaksEl = document.getElementById('requiredTetraPaks');
@@ -896,9 +1114,8 @@
         const requiredTreesEl = document.getElementById('requiredTrees');
         const requiredHectaresEl = document.getElementById('requiredHectares');
 
-
         // Adiciona verificações para todos os elementos de entrada e saída
-        if (!targetProfitEl || !sellingPriceEl || !processingCostEl || !exchangeRateEl || !fruitsPerTreeEl || !treesPerHectareEl ||
+        if (!targetProfitEl || !sellingPriceEl || !processingCostEl || !exchangeRateEl || !waterYieldPerCoconutMlEl || !fruitsPerTreeEl || !treesPerHectareEl ||
             !requiredVolumeEl || !requiredTetraPaksEl || !requiredCoconutsEl || !requiredTreesEl || !requiredHectaresEl) {
             console.error("Um ou mais elementos da calculadora principal não foram encontrados.");
             // Limpa os resultados se os elementos não forem encontrados
@@ -910,21 +1127,18 @@
             return;
         }
 
-
         const targetProfit = parseFloat(targetProfitEl.value);
         const sellingPrice = parseFloat(sellingPriceEl.value);
         const processingCost = parseFloat(processingCostEl.value);
         const exchangeRate = parseFloat(exchangeRateEl.value);
+        const waterYieldPerCoconutMl = parseFloat(waterYieldPerCoconutMlEl.value); // Obtém o valor do novo campo
         const fruitsPerTree = parseFloat(fruitsPerTreeEl.value);
         const treesPerHectare = parseFloat(treesPerHectareEl.value);
 
-
-        const waterYieldPerCoconutMl = 600; // ml
         const tetraPakVolumeMl = 330; // ml
 
-
-        if (isNaN(targetProfit) || isNaN(sellingPrice) || isNaN(processingCost) || isNaN(exchangeRate) || isNaN(fruitsPerTree) || isNaN(treesPerHectare) ||
-            sellingPrice <= 0 || processingCost <= 0 || exchangeRate <= 0 || fruitsPerTree <= 0 || treesPerHectare <= 0) {
+        if (isNaN(targetProfit) || isNaN(sellingPrice) || isNaN(processingCost) || isNaN(exchangeRate) || isNaN(waterYieldPerCoconutMl) || isNaN(fruitsPerTree) || isNaN(treesPerHectare) ||
+            sellingPrice <= 0 || processingCost <= 0 || exchangeRate <= 0 || waterYieldPerCoconutMl <= 0 || fruitsPerTree <= 0 || treesPerHectare <= 0) {
             requiredVolumeEl.textContent = 'Erro: Valores inválidos.';
             requiredTetraPaksEl.textContent = 'Erro: Valores inválidos.';
             requiredCoconutsEl.textContent = 'Erro: Valores inválidos.';
@@ -933,18 +1147,14 @@
             return;
         }
 
-
         // Custo por ml de água (da matéria-prima)
         const costPerMlRaw = processingCost / waterYieldPerCoconutMl;
-
 
         // Preço de venda por ml de água (do produto final)
         const sellingPricePerMl = sellingPrice / tetraPakVolumeMl;
 
-
         // Lucro por ml de água
         const profitPerMlUsd = sellingPricePerMl - costPerMlRaw;
-
 
         if (profitPerMlUsd <= 0) {
             requiredVolumeEl.textContent = 'Não há lucro com esses valores.';
@@ -955,44 +1165,34 @@
             return;
         }
 
-
         // Lucro desejado em USD
         const targetProfitUsd = targetProfit / exchangeRate;
-
 
         // Volume total de água necessário em ml
         const requiredTotalWaterMl = targetProfitUsd / profitPerMlUsd;
 
-
         // Volume de água necessário em litros
         const requiredVolumeLiters = requiredTotalWaterMl / 1000;
-
 
         // Número de embalagens Tetra Pak necessárias
         const requiredTetraPaks = Math.ceil(requiredTotalWaterMl / tetraPakVolumeMl);
 
-
         // Número de cocos a serem processados
         const requiredCoconuts = Math.ceil(requiredTotalWaterMl / waterYieldPerCoconutMl);
 
-
         // Número de coqueiros necessários
         const requiredTrees = Math.ceil(requiredCoconuts / fruitsPerTree);
-
 
         // Número de hectares necessários
         const requiredHectares = (requiredTrees / treesPerHectare).toFixed(2);
 
 
-
-
-        requiredVolumeEl.textContent = requiredVolumeLiters.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
-        requiredTetraPaksEl.textContent = requiredTetraPaks.toLocaleString('pt-BR');
-        requiredCoconutsEl.textContent = requiredCoconuts.toLocaleString('pt-BR');
-        requiredTreesEl.textContent = requiredTrees.toLocaleString('pt-BR');
-        requiredHectaresEl.textContent = requiredHectares.toLocaleString('pt-BR');
+        document.getElementById('requiredVolume').textContent = requiredVolumeLiters.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
+        document.getElementById('requiredTetraPaks').textContent = requiredTetraPaks.toLocaleString('pt-BR');
+        document.getElementById('requiredCoconuts').textContent = requiredCoconuts.toLocaleString('pt-BR');
+        document.getElementById('requiredTrees').textContent = requiredTrees.toLocaleString('pt-BR');
+        document.getElementById('requiredHectares').textContent = requiredHectares.toLocaleString('pt-BR');
     }
-
 
     // JavaScript para a Calculadora de Receita e Lucro da Fazenda
     function calculateFarmProfitability() {
@@ -1000,14 +1200,13 @@
         const farmSellingPriceEl = document.getElementById('farmSellingPrice');
         const farmProcessingCostEl = document.getElementById('farmProcessingCost');
         const farmExchangeRateEl = document.getElementById('farmExchangeRate');
-
+        const farmWaterYieldPerCoconutMlEl = document.getElementById('waterYieldPerCoconutMl'); // Usar o mesmo campo de rendimento
 
         const farmEstimatedRevenueEl = document.getElementById('farmEstimatedRevenue');
         const farmEstimatedProfitEl = document.getElementById('farmEstimatedProfit');
 
-
         // Adiciona verificações para todos os elementos de entrada e saída
-        if (!farmCoconutProductionEl || !farmSellingPriceEl || !farmProcessingCostEl || !farmExchangeRateEl ||
+        if (!farmCoconutProductionEl || !farmSellingPriceEl || !farmProcessingCostEl || !farmExchangeRateEl || !farmWaterYieldPerCoconutMlEl ||
             !farmEstimatedRevenueEl || !farmEstimatedProfitEl) {
             console.error("Um ou mais elementos da calculadora da fazenda não foram encontrados.");
             // Limpa os resultados se os elementos não forem encontrados
@@ -1016,58 +1215,46 @@
             return;
         }
 
-
         const farmCoconutProduction = parseFloat(farmCoconutProductionEl.value);
         const farmSellingPrice = parseFloat(farmSellingPriceEl.value);
         const farmProcessingCost = parseFloat(farmProcessingCostEl.value);
         const farmExchangeRate = parseFloat(farmExchangeRateEl.value);
+        const farmWaterYieldPerCoconutMl = parseFloat(farmWaterYieldPerCoconutMlEl.value); // Obtém o valor do campo de rendimento
 
-
-        const waterYieldPerCoconutMl = 600; // ml
         const tetraPakVolumeMl = 330; // ml
 
-
-        if (isNaN(farmCoconutProduction) || isNaN(farmSellingPrice) || isNaN(farmProcessingCost) || isNaN(farmExchangeRate) ||
-            farmCoconutProduction <= 0 || farmSellingPrice <= 0 || farmProcessingCost <= 0 || farmExchangeRate <= 0) {
+        if (isNaN(farmCoconutProduction) || isNaN(farmSellingPrice) || isNaN(farmProcessingCost) || isNaN(farmExchangeRate) || isNaN(farmWaterYieldPerCoconutMl) ||
+            farmCoconutProduction <= 0 || farmSellingPrice <= 0 || farmProcessingCost <= 0 || farmExchangeRate <= 0 || farmWaterYieldPerCoconutMl <= 0) {
             farmEstimatedRevenueEl.textContent = 'Erro: Valores inválidos.';
             farmEstimatedProfitEl.textContent = 'Erro: Valores inválidos.';
             return;
         }
 
-
         // Cocos processados
         const processedCoconuts = farmCoconutProduction;
 
-
         // Volume total de água produzida em ml
-        const totalWaterProducedMl = processedCoconuts * waterYieldPerCoconutMl;
-
+        const totalWaterProducedMl = processedCoconuts * farmWaterYieldPerCoconutMl;
 
         // Número de embalagens Tetra Pak produzidas
         const totalTetraPaksProduced = Math.floor(totalWaterProducedMl / tetraPakVolumeMl);
 
-
         // Receita total em USD
         const totalRevenueUsd = totalTetraPaksProduced * farmSellingPrice;
-
 
         // Custo total em USD
         const totalCostUsd = processedCoconuts * farmProcessingCost;
 
-
         // Lucro total em USD
         const totalProfitUsd = totalRevenueUsd - totalCostUsd;
-
 
         // Converter para BRL
         const estimatedRevenueBRL = totalRevenueUsd * farmExchangeRate;
         const estimatedProfitBRL = totalProfitUsd * farmExchangeRate;
 
-
-        farmEstimatedRevenueEl.textContent = 'R$ ' + estimatedRevenueBRL.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-        farmEstimatedProfitEl.textContent = 'R$ ' + estimatedProfitBRL.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        document.getElementById('farmEstimatedRevenue').textContent = 'R$ ' + estimatedRevenueBRL.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        document.getElementById('farmEstimatedProfit').textContent = 'R$ ' + estimatedProfitBRL.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
-
 
     // Função para inicializar o mapa Leaflet
     function initializeProductionMap() {
@@ -1076,7 +1263,6 @@
             console.error("Element with ID 'productionMap' not found.");
             return;
         }
-
 
         // Verifica se o mapa já foi inicializado
         if (mapElement._leaflet_id) {
@@ -1100,17 +1286,13 @@
         }
 
 
-
-
         // Inicializa o mapa Leaflet
         const map = L.map('productionMap').setView([0, 0], 2); // Centralizado no mundo, zoom 2
-
 
         // Adiciona a camada de tiles (OpenStreetMap)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-
 
         // Dados dos principais países produtores (aproximados)
         const productionData = [
@@ -1123,7 +1305,6 @@
             { country: 'México', lat: 23.6345, lon: -102.5528, production: 1.2, unit: 'Mt' }
         ];
 
-
         // Adiciona marcadores ao mapa
         productionData.forEach(data => {
             const marker = L.marker([data.lat, data.lon]).addTo(map);
@@ -1134,12 +1315,10 @@
             });
         });
 
-
         // Opcional: Ajusta o zoom para incluir todos os marcadores
         const bounds = L.latLngBounds(productionData.map(data => [data.lat, data.lon]));
         map.fitBounds(bounds, { padding: [50, 50] });
     }
-
 
     // Chamar funções ao carregar a página
     document.addEventListener('DOMContentLoaded', function() {
@@ -1147,7 +1326,6 @@
         calculateFarmProfitability(); // Calcula a calculadora da fazenda
         createGlobalMarketChart(); // Cria o gráfico
         initializeProductionMap(); // Inicializa o mapa
-
 
         // Anima os contadores quando eles se tornam visíveis
         const counterObserver = new IntersectionObserver((entries, observer) => {
@@ -1159,7 +1337,6 @@
                 }
             });
         }, { threshold: 0.5 }); // 50% do elemento visível
-
 
         document.querySelectorAll('[id^="counter"]').forEach(counter => {
             counterObserver.observe(counter);
